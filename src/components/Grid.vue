@@ -59,6 +59,8 @@ export default {
 	},
 
 	methods: {
+		// 1. Make an ajax request to TMDb with the correct page and genre.
+		// 2. Update the following variables: movies, totalPages.
 		callAPI() {
 			var ex = '';
 			if (this.genre == 28) {
@@ -78,19 +80,13 @@ export default {
 			axios.get('https://api.themoviedb.org/3/movie/' + ex +
 			'/similar?api_key=ec8d397c1839f64ffb1016d7f0621b77&language=en-US&page=' +
 			this.page).then((response) => {
-				console.log(response.data);
+				//console.log(response.data);
 				this.totalPages = response.data.total_pages;
 				this.movies = response.data.results
 			}, (error) => {
 				console.log(error);
 			});
 		}
-
-		 
-			// 1. Make an ajax request to TMDb with the correct page and genre.
-			// 2. Update the following variables: movies, totalPages.
-
-			
 	}
 }
 </script>
