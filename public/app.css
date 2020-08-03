@@ -1,0 +1,156 @@
+@font-face {
+  font-family: latoRegular;
+  src: url(../src/assets/fonts/lato-regular-webfont.woff);
+  font-weight: 400;
+}
+@font-face {
+  font-family: latoBold;
+  src: url(../src/assets/fonts/lato-bold-webfont.woff);
+  font-weight: 700;
+}
+@font-face {
+  font-family: latoBlack;
+  src: url(../src/assets/fonts/lato-black-webfont.woff);
+  font-weight: 900;
+}
+body {
+  margin: auto;
+  background-color: lightgray;
+}
+
+.app {
+  padding: 2em 0;
+}
+.app h2 {
+  font-size: 62px;
+  font-family: "latoBlack";
+  color: #3f3f3f;
+  text-align: center;
+}
+.app p {
+  font-size: 16px;
+  font-family: "latoBlack";
+  color: #3f3f3f;
+  text-align: center;
+}
+
+.container {
+  padding: 0 1em;
+  background-image: url("./assets/GettyImages-889642362.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100% 25%;
+}
+
+.grid {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  padding-top: 1em;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.navi {
+  height: 100px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.navi nav {
+  display: inline;
+}
+.navi .bar {
+  float: right;
+  padding: 20px;
+  font-size: 16px;
+  font-family: "latoRegular";
+}
+.navi .bar td {
+  color: #d8d8d8;
+  padding: 20px;
+}
+.navi img {
+  height: 100px;
+  padding: 5px, 5px, 5px, 5px;
+  margin-left: 100px;
+}
+
+.hero {
+  margin-top: 50px;
+  margin-left: 200px;
+  margin-top: 350px;
+  margin-bottom: 100px;
+}
+.hero h1 {
+  color: #d8d8d8;
+  font-size: 72px;
+  font-family: "latoRegular";
+  margin: 150px, 0px, 0px, 0px;
+  padding: 0px;
+  margin: 0px;
+}
+.hero button {
+  width: 100px;
+  height: 40px;
+  font-size: 18px;
+  font-family: "latoRegular";
+  padding: 0px;
+  margin: 20px, 0px;
+}
+
+.pagination {
+  text-align: center;
+}
+.pagination button {
+  margin: 10px;
+  padding: 10px;
+  color: black;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.pagination button:hover {
+  background-color: #3f3f3f;
+}
+.pagination .bookend {
+  background-color: #919191;
+}
+.pagination .current {
+  background-color: #009fd9;
+}
+
+.movie {
+  width: 200px;
+  margin: 0 0.5em 1em;
+}
+.movie .poster {
+  height: 300px;
+  width: 100%;
+  margin-bottom: 1em;
+  box-shadow: 1px 1px 20px #c7c7c7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.movie .title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+.movie .rating {
+  color: #b8b8b8;
+  font-size: 14px;
+  margin: 0;
+}
+
+.source img {
+  display: block;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+
+/*# sourceMappingURL=app.css.map */

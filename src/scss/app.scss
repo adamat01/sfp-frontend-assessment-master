@@ -1,0 +1,183 @@
+// Navigation: 16px
+// Navigation (Current Genre): Lato Black
+// Navigation (Other Genres): Lato Regular
+// Main Title (H1): 72px, Lato Regular
+// Subheading (H2): 62px, Lato Black
+// Button: 18px, Lato Regular
+// Paragraph Text: 16px, Lato Regular
+// Movie Titles: 18px, Lato Bold
+// Movie Ratings: 14px, Lato Regular
+// Pagination: 16px, Lato Regular
+
+
+// Gray (Gray text): #b8b8b8
+// Black: #3f3f3f
+// Light Gray (The gray background on pagination): #009fd9 #d8d8d8
+// Blue (The blue background on pagination): #009fd9
+
+@font-face {
+	font-family: latoRegular;
+	src: url(../src/assets/fonts/lato-regular-webfont.woff);
+	font-weight: 400;
+}
+@font-face {
+	font-family: latoBold;
+	src: url(../src/assets/fonts/lato-bold-webfont.woff);
+	font-weight: 700;
+}
+@font-face {
+	font-family: latoBlack;
+	src: url(../src/assets/fonts/lato-black-webfont.woff);
+	font-weight: 900;
+}
+
+body {
+	margin: auto;
+	background-color: lightgray;
+}
+
+.app {
+	padding: 2em 0;
+
+	h2 {
+		font-size: 62px;
+		font-family: 'latoBlack';
+		color: #3f3f3f;
+		text-align: center;
+	}
+	p {
+		font-size: 16px;
+		font-family: 'latoBlack';
+		color: #3f3f3f;
+		text-align: center;
+	}
+}
+
+.container {
+	padding: 0 1em;
+	background-image: url("./assets/GettyImages-889642362.jpg");
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-size: 100% 25%;
+}
+
+.grid {
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	padding-top: 1em;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.navi {
+
+	height: 100px;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	background: rgba($color: #000000, $alpha: 0.5);
+
+	nav {
+		display: inline;
+	}
+	
+	.bar {
+		float: right;
+		padding: 20px;
+		font-size: 16px;
+		font-family: 'latoRegular';
+	}
+
+	.bar td {
+		color: #d8d8d8;
+		padding: 20px;
+	}
+
+	img {
+		height: 100px;
+		padding: 5px, 5px, 5px, 5px;
+		margin-left: 100px;
+	}
+}
+
+.hero {
+	margin-top: 50px;
+	margin-left: 200px;
+	margin-top: 350px;
+	margin-bottom: 100px;
+
+	h1 {
+		color: #d8d8d8;
+		font-size: 72px;
+		font-family: 'latoRegular';
+		margin: 150px, 0px, 0px, 0px;
+		padding: 0px;
+		margin: 0px;
+	}
+	button {
+		width: 100px;
+		height: 40px;
+		font-size: 18px;
+		font-family: 'latoRegular';
+		padding: 0px;
+		margin: 20px, 0px;
+	}
+}
+
+.pagination {
+	text-align: center;
+
+	button {
+		margin: 10px;
+		padding: 10px;
+		color: black;
+		background-color: transparent;
+		outline: none;
+		border: none;
+	}
+	button:hover {
+		background-color: #3f3f3f;
+	}
+	.bookend {
+		background-color: #919191;
+	}
+	.current {
+		background-color: #009fd9;
+	}
+}
+
+.movie {
+	width: 200px;
+	margin: 0 .5em 1em;
+
+	.poster {
+		height: 300px;
+		width: 100%;
+		margin-bottom: 1em;
+		box-shadow: 1px 1px 20px #c7c7c7;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.title {
+		font-size: 18px;
+		font-weight: bold;
+		margin: 0;
+	}
+
+	.rating {
+		color: #b8b8b8;
+		font-size: 14px;
+		margin: 0;
+	}
+}
+
+.source img {
+	display: block;
+	padding: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 10%;
+}
