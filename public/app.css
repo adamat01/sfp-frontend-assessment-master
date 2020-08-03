@@ -15,7 +15,6 @@
 }
 body {
   margin: auto;
-  background-color: lightgray;
 }
 
 .app {
@@ -26,11 +25,12 @@ body {
   font-family: "latoBlack";
   color: #3f3f3f;
   text-align: center;
+  margin-bottom: 20px;
 }
 .app p {
   font-size: 16px;
   font-family: "latoBlack";
-  color: #3f3f3f;
+  color: #b8b8b8;
   text-align: center;
 }
 
@@ -84,7 +84,7 @@ body {
   margin-bottom: 100px;
 }
 .hero h1 {
-  color: #d8d8d8;
+  color: #b8b8b8;
   font-size: 72px;
   font-family: "latoRegular";
   margin: 150px, 0px, 0px, 0px;
@@ -115,9 +115,11 @@ body {
   background-color: #3f3f3f;
 }
 .pagination .bookend {
-  background-color: #919191;
+  color: white;
+  background-color: #b8b8b8;
 }
 .pagination .current {
+  color: white;
   background-color: #009fd9;
 }
 
@@ -129,7 +131,7 @@ body {
   height: 300px;
   width: 100%;
   margin-bottom: 1em;
-  box-shadow: 1px 1px 20px #c7c7c7;
+  box-shadow: 1px 1px 20px #b8b8b8;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -138,6 +140,7 @@ body {
   font-size: 18px;
   font-weight: bold;
   margin: 0;
+  color: #3f3f3f;
 }
 .movie .rating {
   color: #b8b8b8;
